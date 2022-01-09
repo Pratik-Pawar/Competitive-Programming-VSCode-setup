@@ -8,11 +8,11 @@
             "type": "java",
             "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "${file}",
-            "args": "#Local",
-            "classPaths": ["$Runtime"]
-            
-
+            "mainClass": "${file}" ,
+            "args": "\"#Local \"",
+            "classPaths": [
+                "$Runtime"
+            ]
         },
         {
             "type": "java",

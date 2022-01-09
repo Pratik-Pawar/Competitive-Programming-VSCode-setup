@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.math.*;
 
-public class Solution {
+public class TestClass {
 
     Object solve() {
 
@@ -24,7 +24,7 @@ public class Solution {
             }
         }
         ip = new Scanner(System.in);
-        Solution s = new Solution();
+        TestClass s = new TestClass();
         T = 1;
         T = ip.nextInt();
         for (t = 1; t <= T; t++) {

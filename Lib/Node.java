@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 class Node {
 
-    LinkedList<Node> adj = new LinkedList<>();
+    LinkedList<Node> adjList = new LinkedList<>();
     int id;
     boolean lock = false;
 
@@ -17,13 +17,13 @@ class Node {
     }
 
     void addAdj1D(Node n) {
-        this.adj.add(n);
+        this.adjList.add(n);
 
     }
 
     void addAdj2D(Node n) {
-        this.adj.add(n);
-        n.adj.add(this);
+        this.adjList.add(n);
+        n.adjList.add(this);
 
     }
 
@@ -32,7 +32,7 @@ class Node {
             return;
         }
         node.lock = true;
-        for (Node adj : node.adj) {
+        for (Node adj : node.adjList) {
 
             DFS(adj);
         }
