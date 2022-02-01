@@ -5,10 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "python",
+            "name": "Python: Current File",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "#Local "
+            ]
+        },
+        {
             "type": "java",
             "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "${file}" ,
+            "mainClass": "${file}",
             "args": "\"#Local \"",
             "classPaths": [
                 "$Runtime"
